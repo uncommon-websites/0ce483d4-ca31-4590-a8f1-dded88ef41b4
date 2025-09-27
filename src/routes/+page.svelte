@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Validate faster. Build what matters."
+	subtitle="Close the feedback loop. Prioritize with confidence."
+	imageSrc="/generated/image-a-cheerful-product-manager-in-their-late.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by product teams at leading SaaS companies"
+	logoUrls={[
+		'https://cdn.brandfetch.io/slack.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/stripe.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/notion.so/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/linear.app/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
