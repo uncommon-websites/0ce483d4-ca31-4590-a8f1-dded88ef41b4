@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	
+	// Icons for features
+	import IconMessageSquare from "~icons/lucide/message-square";
+	import IconTrendingUp from "~icons/lucide/trending-up";
+	import IconTarget from "~icons/lucide/target";
+	import IconGitBranch from "~icons/lucide/git-branch";
+	import IconEye from "~icons/lucide/eye";
+	import IconRadar from "~icons/lucide/radar";
 </script>
 
 <Hero
@@ -32,54 +40,67 @@
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Maya Chen",
+			position: "Head of Product",
+			company: "VelocityTech",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"4ow1 cut our feature validation cycle from 6 weeks to 2 weeks. We saved $180k in development costs by killing bad ideas early and doubling down on features that actually moved the needle.",
+			image: "/generated/image-professional-headshot-of-a-confident-asi.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "VP Product",
+			company: "ScaleForward",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Before 4ow1, we were flying blind on product-market fit. Now we validate assumptions in days, not months. This prevented a costly $2M pivot and helped us reach Series A 8 months ahead of schedule.",
+			image: "/generated/image-professional-headshot-of-a-confident-bla.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Isabella Rodriguez",
+			position: "Senior Product Manager",
+			company: "GrowthLab",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"4ow1 eliminated the guesswork in feature prioritization. We increased user retention by 43% in just one quarter by focusing on validated user needs instead of internal assumptions.",
+			image: "/generated/image-professional-headshot-of-a-confident-his.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Validate faster. Build what matters."
+	subtitle="Stop guessing what users want. Get clear signals on what to build next with real-time feedback and data-driven prioritization."
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Instant feedback loops",
+			description: "Embed lightweight surveys and micro-feedback tools directly in your product without any coding or delays.",
+			icon: IconMessageSquare
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Data-driven prioritization",
+			description: "AI-powered insights help you spot patterns, track demand, and rank feature requests in one clean dashboard.",
+			icon: IconTrendingUp
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Pre-build validation",
+			description: "Test concepts and workflows before handing off to engineering, saving weeks of development time.",
+			icon: IconTarget
+		},
+		{
+			title: "Development workflow integration",
+			description: "Connect feedback directly to your existing tools and processes for seamless product development cycles.",
+			icon: IconGitBranch
+		},
+		{
+			title: "Real-time behavior insights",
+			description: "Track how users actually interact with your features to understand what drives engagement and retention.",
+			icon: IconEye
+		},
+		{
+			title: "Competitive positioning intelligence",
+			description: "Monitor market trends and competitor movements to position your features strategically in the market.",
+			icon: IconRadar
 		}
 	]}
 />
